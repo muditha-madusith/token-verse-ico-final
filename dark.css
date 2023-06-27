@@ -1,3 +1,16 @@
+
+.padding{
+  padding: 0rem 5rem;
+}
+.h5{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.li{
+  color: white;
+  padding: 2px 0;
+}
+
 /*
   TABLE OF CONTENTS
   --------------------------------
@@ -119,17 +132,17 @@ p {
 }
 
 .page {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   position: relative;
 }
 
 .main-section {
   margin: 0;
-  padding: 4rem 0;
+  padding: 1rem 0;
   position: relative;
 }
 .main-section .content {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 a {
@@ -153,7 +166,7 @@ button:focus,
 .section-title {
   position: relative;
   overflow: hidden;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .section-title img {
@@ -1380,7 +1393,7 @@ button:focus,
 .main-news .news-container-sub {
   box-shadow: 0 0 127px -33px rgba(0, 0, 0, 0.23);
   border-radius: 15px;
-  margin: 2rem 0.5rem;
+  margin: 1rem 0.5rem;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1405,7 +1418,7 @@ button:focus,
 }
 .main-news .news-container-sub h6 {
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 .main-news .news-container-sub .news-details {
   position: relative;
@@ -1691,7 +1704,7 @@ button:focus,
 /* ------------------------------------- */
 .main-footer {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
 }
 .main-footer img {
@@ -1702,7 +1715,7 @@ button:focus,
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
   padding: 5px;
-  margin-top: 1rem;
+  margin-top: 0rem;
   font-size: 20px;
 }
 .main-footer i:hover {
@@ -1753,7 +1766,7 @@ button:focus,
 /* *. Other Pages.. .................... */
 /* ------------------------------------- */
 .other-pages .header-title {
-  margin: 4rem 0 12rem;
+  margin: 2rem 0 12rem;
 }
 .other-pages .header-title h2 {
   text-align: center;
