@@ -10,6 +10,9 @@
   color: white;
   padding: 2px 0;
 }
+.p{
+  text-align: left;
+}
 
 /*
   TABLE OF CONTENTS
@@ -1704,7 +1707,7 @@ button:focus,
 /* ------------------------------------- */
 .main-footer {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 3rem;
 }
 .main-footer img {
@@ -1715,7 +1718,7 @@ button:focus,
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
   padding: 5px;
-  margin-top: 0rem;
+  margin-top: rem;
   font-size: 20px;
 }
 .main-footer i:hover {
@@ -1766,7 +1769,7 @@ button:focus,
 /* *. Other Pages.. .................... */
 /* ------------------------------------- */
 .other-pages .header-title {
-  margin: 2rem 0 12rem;
+  margin: 4rem 0 12rem;
 }
 .other-pages .header-title h2 {
   text-align: center;
