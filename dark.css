@@ -1,39 +1,119 @@
+/* CSS styles for the custom alert */
 
-.padding{
+.alert-column{
+  /* border: 1px solid rgb(145, 0, 0); */
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+
+.success-alert {
+
+  background: rgba(182, 203, 176, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1.2px solid rgb(39, 214, 0);
+  border-radius: 20px;
+  padding: 10px;
+  width: 350px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 4rem;
+}
+
+.success-alert .close-icon {
+  position: absolute;
+  top: -3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  width: 325px;
+  height: 0px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(254, 254, 254);
+  font-style: italic;
+}
+
+
+.error-alert {
+  background: rgba(208, 160, 160, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1.2px solid red;
+  border-radius: 20px;
+  padding: 10px;
+  width: 370px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 4rem;
+}
+
+.error-alert .close-icon {
+  position: absolute;
+  top: -3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  width: 345px;
+  height: 0px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(243, 194, 194);
+  font-style: italic;
+}
+
+
+.padding {
   padding: 0rem 5rem;
 }
-.h5{
+.h5 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.li{
+.li {
   color: white;
   padding: 2px 0;
 }
-.p{
+.p {
   text-align: justify;
   font-size: small;
 }
-.pc{
-  text-align: center
+.pc {
+  text-align: center;
 }
-.pspan{
+.pspan {
   font-size: 12px;
   text-align: center;
 }
-.center{
+.center {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.i{
+.i {
   font-weight: 700;
 }
-.i2{
+.i2 {
   color: #fff;
 }
-.div-slid{
+.div-slid {
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;

