@@ -14,6 +14,37 @@
   text-align: justify;
   font-size: small;
 }
+.pc{
+  text-align: center
+}
+.pspan{
+  font-size: 11px;
+  text-align: center;
+}
+.center{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i{
+  font-weight: 500;
+}
+.i2{
+  color: #fff;
+}
+.div-slid{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 /*
   TABLE OF CONTENTS
@@ -2852,10 +2883,9 @@ button:focus,
 .rang-slider-toltip {
   width: 100%;
   clear: both;
-  text-align: right;
+  text-align: center;
   line-height: 22px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 .rang-slider-toltip > span {
   display: inline-block;
@@ -2921,8 +2951,9 @@ button:focus,
 }
 .rang-slider-total {
   clear: both;
-  padding-right: 30px;
-  padding-top: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 20px;
 }
 .rang-slider-total p span {
   color: #dda620;
