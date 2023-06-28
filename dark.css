@@ -1,7 +1,6 @@
 /* CSS styles for the custom alert */
 
 .alert-column{
-  /* border: 1px solid rgb(145, 0, 0); */
   position: absolute;
   top: 10px;
   width: 100%;
@@ -123,13 +122,10 @@
   align-items: center;
 }
 
-/* ------------------------------------- */
-/* *. Fonts ............................ */
-/* ------------------------------------- */
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500|Raleway:700");
-/* ------------------------------------- */
-/* *. General Styles ................... */
-/* ------------------------------------- */
+
+
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1048,9 +1044,7 @@ button:focus,
   transform: translate3d(-50%, 50%, 0);
 }
 
-/* ------------------------------------- */
-/* *. About Us ......................... */
-/* ------------------------------------- */
+
 .main-about .left-side-content {
   overflow: hidden;
 }
@@ -1084,7 +1078,6 @@ button:focus,
   flex-flow: column wrap;
   max-height: 1000px;
   margin-left: -8px;
-  /* Adjustment for the gutter */
   counter-reset: brick;
 }
 .main-about .right-side-content .single-card {
@@ -1123,9 +1116,8 @@ button:focus,
   background: linear-gradient(90deg, #3cf7ff, #af26e0);
 }
 
-/* ------------------------------------- */
-/* *. Road-Map ......................... */
-/* ------------------------------------- */
+
+
 .main-road-map .road-map-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1209,9 +1201,8 @@ button:focus,
   padding: 15px 10px;
 }
 
-/* ------------------------------------- */
-/* *. Our Projects ..................... */
-/* ------------------------------------- */
+
+
 .main-projects .single-project {
   margin: 2rem 0;
 }
@@ -1240,9 +1231,8 @@ button:focus,
   display: inline-block;
 }
 
-/* ------------------------------------- */
-/* *. Our Team ......................... */
-/* ------------------------------------- */
+
+
 .main-team {
   position: relative;
   margin-bottom: 0;
@@ -1340,9 +1330,8 @@ button:focus,
   background-size: 35px 2px;
 }
 
-/* ------------------------------------- */
-/* *. Download ......................... */
-/* ------------------------------------- */
+
+
 .main-download {
   margin-top: 0;
 }
@@ -1432,9 +1421,7 @@ button:focus,
   margin: 4rem auto 0;
 }
 
-/* ------------------------------------- */
-/* *. News ............................. */
-/* ------------------------------------- */
+
 .main-news {
   position: relative;
 }
@@ -1528,9 +1515,7 @@ button:focus,
   transform: rotate(3deg);
 }
 
-/* ------------------------------------- */
-/* *. FAQs and Contact ................. */
-/* ------------------------------------- */
+
 .main-contact-faq {
   padding-bottom: 0;
   border-radius: 30px;
@@ -1747,9 +1732,7 @@ button:focus,
   opacity: 1;
 }
 
-/* ------------------------------------- */
-/* *. Footer ........................... */
-/* ------------------------------------- */
+
 .main-footer {
   text-align: center;
   margin-top: 0rem;
@@ -1771,9 +1754,8 @@ button:focus,
   background: linear-gradient(left, #c39432, #c39432);
 }
 
-/* ------------------------------------- */
-/* *. Copyrights ....................... */
-/* ------------------------------------- */
+
+
 .main-copyright {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1810,9 +1792,8 @@ button:focus,
   font-size: 0.9rem;
 }
 
-/* ------------------------------------- */
-/* *. Other Pages.. .................... */
-/* ------------------------------------- */
+
+
 .other-pages .header-title {
   margin: 4rem 0 12rem;
 }
@@ -2052,9 +2033,8 @@ button:focus,
   font-size: 1.8rem;
 }
 
-/* ------------------------------------- */
-/* *. Blog Pages  ...................... */
-/* ------------------------------------- */
+
+
 .blog-page .blog-header-section {
   margin: 0;
   padding: 0;
@@ -2342,9 +2322,7 @@ button:focus,
   margin: 0 15px 0 5px;
 }
 
-/* ------------------------------------- */
-/* *. Media Queries .................... */
-/* ------------------------------------- */
+
 @media screen and (min-width: 2000px) {
   .container {
     max-width: 1900px;
