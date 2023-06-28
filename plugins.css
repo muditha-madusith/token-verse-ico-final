@@ -1,17 +1,4 @@
-/**
- * All CSS libraries Used
- * 1.  FontAwesome
- * 2.  Bootstrap CSS
- * 3.  Owl Carousel
- * 4.  Lity CSS
- * 5.  Waves CSS
- * 6.  Animate CSS
- * 7.  AOS CSS
- */
-/*!
- * Font Awesome Free 5.2.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
+
  .fa,.fab,.fal,.far,.fas {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -14637,9 +14624,7 @@ a.text-dark:focus,a.text-dark:hover {
     width: 100%
 }
 
-/*! Lity - v2.2.2 - 2017-07-17
-* http://sorgalla.com/lity/
-* Copyright (c) 2015-2017 Jan Sorgalla; Licensed MIT */
+/* Lity */
 .lity {
     z-index: 9990;
     position: fixed;
@@ -14838,13 +14823,7 @@ a.text-dark:focus,a.text-dark:hover {
     display: none
 }
 
-/*!
-* Waves v0.7.6
-* http://fian.my.id/Waves
-*
-* Copyright 2014-2018 Alfiana E. Sibuea and other contributors
-* Released under the MIT license
-* https://github.com/fians/Waves/blob/master/LICENSE */
+/* Waves */
 .waves-effect {
     position: relative;
     cursor: pointer;
