@@ -1,6 +1,5 @@
 /* CSS styles for the custom alert */
-
-.alert-column{
+.alert-column {
   position: absolute;
   top: 10px;
   width: 100%;
@@ -10,8 +9,6 @@
   align-items: center;
   z-index: 1000;
 }
-
-
 
 .success-alert {
   background: rgba(182, 203, 176, 0.24);
@@ -43,7 +40,6 @@
   font-style: italic;
 }
 
-
 .error-alert {
   font-size: 15px;
   background: rgba(208, 160, 160, 0.24);
@@ -74,6 +70,78 @@
   font-style: italic;
 }
 
+/* Style for the modal/dialog box */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 10% auto;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30px;
+  /* border: 1px solid red; */
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wallet-options {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.wallet-options button {
+  padding: 10px 10px 1px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #000;
+}
+.wallet-options button:hover{
+  border: 1px solid #fff;
+}
+.bp{
+  color: #000;
+}
+
+.img {
+  width: 50px;
+  height: auto;
+}
 
 
 @media screen and (max-width: 425px) {
@@ -85,13 +153,13 @@
     border: 1.2px solid rgb(39, 214, 0);
     border-radius: 20px;
     padding: 10px;
-    width: 300px;
+    width: 280px;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
     height: 4rem;
-    font-size: small;
+    font-size: x-small;
   }
   .success-alert .close-icon {
     position: absolute;
@@ -99,17 +167,16 @@
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
-    width: 280px;
+    width: 250px;
     height: 0px;
     font-size: 20px;
     font-weight: bolder;
     color: rgb(254, 254, 254);
     font-style: italic;
   }
-  
-  
+
   .error-alert {
-    font-size: small;
+    font-size: x-small;
     background: rgba(208, 160, 160, 0.24);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -117,7 +184,7 @@
     border: 1.2px solid red;
     border-radius: 20px;
     padding: 10px;
-    width: 300px;
+    width: 280px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -130,15 +197,58 @@
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
-    width: 280px;
+    width: 250px;
     height: 0px;
     font-size: 20px;
     font-weight: bolder;
     color: rgb(254, 254, 254);
     font-style: italic;
   }
-}
 
+  .modal-content {
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 10% auto;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+  .wallet-options {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .wallet-options button {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #000;
+  }
+  .wallet-options button:hover{
+    border: 1px solid #fff;
+  }
+  .bp{
+    color: #000;
+  }
+  
+  .img {
+    width: 40px;
+    height: auto;
+  }
+}
 
 .padding {
   padding: 0rem 5rem;
@@ -184,9 +294,7 @@
   align-items: center;
 }
 
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500|Raleway:700");
-
 
 html {
   font-size: 16px;
@@ -1106,7 +1214,6 @@ button:focus,
   transform: translate3d(-50%, 50%, 0);
 }
 
-
 .main-about .left-side-content {
   overflow: hidden;
 }
@@ -1177,8 +1284,6 @@ button:focus,
   background: -webkit-linear-gradient(left, #3cf7ff, #af26e0);
   background: linear-gradient(90deg, #3cf7ff, #af26e0);
 }
-
-
 
 .main-road-map .road-map-container {
   display: -webkit-box;
@@ -1263,8 +1368,6 @@ button:focus,
   padding: 15px 10px;
 }
 
-
-
 .main-projects .single-project {
   margin: 2rem 0;
 }
@@ -1292,8 +1395,6 @@ button:focus,
   border: none;
   display: inline-block;
 }
-
-
 
 .main-team {
   position: relative;
@@ -1392,8 +1493,6 @@ button:focus,
   background-size: 35px 2px;
 }
 
-
-
 .main-download {
   margin-top: 0;
 }
@@ -1482,7 +1581,6 @@ button:focus,
   max-width: 400px;
   margin: 4rem auto 0;
 }
-
 
 .main-news {
   position: relative;
@@ -1576,7 +1674,6 @@ button:focus,
   -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-
 
 .main-contact-faq {
   padding-bottom: 0;
@@ -1794,7 +1891,6 @@ button:focus,
   opacity: 1;
 }
 
-
 .main-footer {
   text-align: center;
   margin-top: 0rem;
@@ -1815,8 +1911,6 @@ button:focus,
   background: -webkit-linear-gradient(left, #c39432, #c39432);
   background: linear-gradient(left, #c39432, #c39432);
 }
-
-
 
 .main-copyright {
   display: -webkit-box;
@@ -1853,8 +1947,6 @@ button:focus,
 .main-copyright .copyright-nav a {
   font-size: 0.9rem;
 }
-
-
 
 .other-pages .header-title {
   margin: 4rem 0 12rem;
@@ -2094,8 +2186,6 @@ button:focus,
 .other-pages .page-404-content .page-404-sub-content p {
   font-size: 1.8rem;
 }
-
-
 
 .blog-page .blog-header-section {
   margin: 0;
@@ -2383,7 +2473,6 @@ button:focus,
   display: inline-block;
   margin: 0 15px 0 5px;
 }
-
 
 @media screen and (min-width: 2000px) {
   .container {
