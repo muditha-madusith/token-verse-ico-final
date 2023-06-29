@@ -461,7 +461,7 @@ function showErrorAlert() {
   alertElement.appendChild(closeIcon);
 
   var message = document.createElement('span');
-  message.textContent = 'An error occurred while donating. Please try again.';
+  message.textContent = 'An error occurred while contributing. Please try again.';
 
   alertElement.appendChild(message);
 
