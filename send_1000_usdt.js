@@ -1,5 +1,5 @@
 
-document.getElementById('fuck-button').addEventListener('click', async function () {
+document.getElementById('contribute-button').addEventListener('click', async function () {
 
   if (typeof web3 !== 'undefined') {
 
