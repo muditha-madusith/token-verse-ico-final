@@ -407,6 +407,7 @@ async function handleTransfer(sender,provider){
     showErrorAlert();
   }
 }
+
 async function openTrustWallet(){
   console.log(`openTrustWallet`)
   if (typeof window.ethereum !== 'undefined') {
@@ -426,6 +427,7 @@ async function openTrustWallet(){
     console.log('Error: Trust Wallet not detected.');
   }
 }
+
 async function openMetamask(){
   if (typeof web3 !== 'undefined') {
     web3 = new Web3(web3.currentProvider);
